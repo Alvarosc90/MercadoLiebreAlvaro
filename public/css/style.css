@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #ffe600; /* Color de fondo similar al de Mercado Libre */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+.nav{
+    display: flex;
+    background-color: #ffe600;
+    list-style: none;
+    margin-left: 20px;
+}
+.user-actions{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-left: 20px;
+}
+.botones{
+    
+    display: flex;
+    justify-content: start;
+}
+.nav a {
+    text-decoration: none;
+    color: #333; /* Color de texto similar al de Mercado Libre */
+}
+
+.search-bar {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 50%;
+}
+
+.search-bar input {
+    padding: 10px;
+    flex: 1;
+    border: none;
+}
+
+.search-bar button {
+    background-color: #ffffff;
+    color: #505050;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.user-actions a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333; /* Color de texto similar al de Mercado Libre */
+    
+}
+
+.user-actions a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color:#EAC926;
+    font-family:'Roboto', sans-serif;
+}
+.containertop{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: 20px;
+}
+.inicio{
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.final{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-left: 20px;
+}
+p {
+    font-size:12px;
+}
+
+h2 {
+    font-size:24px;
+}
+
+.precio {
+    font-size:18px;
+}
+
+.descuento {
+    font-size:16px;
+}
+
+.desc {
+    font-size:16px;
+}
+.barraBusqueda{
+    padding: 40px;
+    border-radius: 50%;
+
+}
+.compracuotas{
+    padding: 40px;
+
+}
+
+footer {
+    justify-content: center;
+    text-align:center;
+}
+.contenedorTop{
+    display: flex;
+    flex-direction: cross;
+    justify-content:space-between;
+    margin: 20px;
+}
+.containertop{
+    display: flex;
+    flex-direction: cross;
+    justify-content:space-between;
+}
+.container {
+    display: flex;
+    width: 100%;
+}
+.inicio{
+    display: flex;
+    justify-content: flex-start;
+}
+.final{
+    display:flex;
+    justify-content: flex-end;
+}
+.burger-menu {
+    background-color:#1259c3;
+    color:white;
+    display:block;
+    width: 1em;
+    justify-content: center;
+    margin-left: 50%;
+    padding-left: 2px;
+}
+
+.footer-img {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#1259c3;
+}
+
