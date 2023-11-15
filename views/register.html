@@ -20,43 +20,36 @@
 <p class="compracuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito!</p>
 </header>
   <main class="register">
-    <div class="main-welcom">
-      <p>Registrese para ingresar a mercado liebre</p>
-    </div>
     <div class="main-form">
       <form action="/register" method="POST">
         <nav>
-          <label class="nombre">Nombre y Apellido</label>
+          <label class="formtop"></label>
         </nav>
-        <input class="main-name" type="text" name="name" required>
+        <input class="formtop1" type="text" name="name" required placeholder="Nombre y Apellido">
         <nav>
-          <label class="user">Nombre de usuario</label>
+          <label class="formtop" a></label>
         </nav>
-        <input class="main-user" type="text" name="user" required>
+        <input class="formtop1" type="text" name="user" required placeholder="Nombre de usuario">
         <nav>
-          <label class="main-em">E-mail:</label>
+          <label class="formtop" ></label>
         </nav>
-        <input class="main-name" type="email" name="name" required>
-        <nav>
-          <label class="Fecha">Fecha de nacimiento</label>
+        <input class="formtop1" type="email" name="name" required placeholder="Email">
+        <nav class="conteinercenter">
+          <label class="formcenter">Fecha de nacimiento</label>
+        </nav >
+        <input class="formcenter1" type="date" name="date" required placeholder="Domicilio">
         </nav>
-        <input class="main-date" type="date" name="date" required>
-        <nav>
-          <label class="direction">Domicilio</label>
+        <nav class="conteinercenter">
+          <label class="formcenter">Perfil de usuario</label>
         </nav>
-        <input class="main-em1" type="email" name="email" required>
-        <nav>
-          <label class="main-pass">Perfil de usuario</label>
-        </nav>
-        <nav>
+        <nav class="perfiluser">
           <option for="opcion1">Comprar</option>
           <input type="checkbox" id="opcion1" name="opciones[]" value="opcion1">
           <option for="opcion2">Vender</option>
           <input type="checkbox" id="opcion2" name="opciones[]" value="opcion2">
         </nav>
-
-        <nav>
-          <label class="main-pass">Perfil de usuario</label>
+        <nav class="conteinercenter">
+          <label class="formcenter">Intereses</label>
         </nav>
         <nav>
           <option for="opcion1">Electro</option>
@@ -67,30 +60,36 @@
           <input type="checkbox" id="opcion3" name="opciones[]" value="opcion3">
           <option for="opcion4">Vida Sana</option>
           <input type="checkbox" id="opcion4" name="opciones[]" value="opcion4">
+          <option for="opcion4">Hogar</option>
+          <input type="checkbox" id="opcion4" name="opciones[]" value="opcion4">
         </nav>
-
-        <label for="foto">Subir foto:</label>
-        <input type="file" id="foto" name="foto" accept="image/*">
+        <nav class="conteinercenter"> 
+          <label class="formcenter" for="foto">Subir foto:</label>
+          <input type="file" id="foto" name="foto" accept="image/*" >
+        </nav>
+       
         <nav>
-          <label class="main-pass">Contraseña:</label>
+          <label class="formBott"></label>
         </nav>
-        <input class="main-pass1" type="password" name="password" required>
-        </nav>
-        <nav>
-          <label class="main-pass">Confirmar Contraseña:</label>
+        <input class="formBott1" type="password" name="password" required placeholder="Contraseña">
         </nav>
         <nav>
-          <input class="main-pass1" type="password" name="password" required>
+          <label class="formBott"></label>
         </nav>
-        <input type="reset" value="Borrar Todo">
-      </form>
-      <form action="/home">
         <nav>
-          <p>
-            <button class="main-" type="submit">Registrarse</button>
-          </p>
+          <input class="formBott1" type="password" name="password" required placeholder=" Confirmar Contraseña">
         </nav>
-      </form>
+        <nav class="reset">
+          <input class="reset1" type="reset" value="Borrar Todo">
+        </nav>
+        <form action="/home">
+          <nav class="conteiner-register">
+            <p>
+              <button class="main-register" type="submit" >Registrarse </button>
+            </p>
+          </nav>
+        </form>
+      </form>  
     </div>
   </main>
 </body>

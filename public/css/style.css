@@ -185,7 +185,124 @@ footer {
 .login{
     display:flex;
     justify-content: center;
-    padding-left: 2px;
+    padding: 50px;
     align-items: center;
     box-sizing: border-box;
+    background-color: rgb(231, 231, 231);
+    
+}
+.main-em1{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 500px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+}
+
+.main-sesion{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 500px;    
+    height: 30px;
+    border:none;
+    background-color: #1259c3;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+  
+}
+.conteiner-sesion{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+}
+.main-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(231, 231, 231);
+}
+.main-register{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 500px;       
+    height: 30px;
+    border:none;
+    background-color: #1259c3;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+.main-form{
+    margin:10px;
+    padding: 15px;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.formtop{
+    padding: 10px;
+
+}
+.formtop1{
+    width: 500px;       
+    height: 30px;
+    border:none;
+}
+
+.formcenter1{
+    height: 30px;
+    border:none;
+}
+.formcenter{
+    font-weight:bold;
+}
+.conteinercenter{
+    padding: 10px;
+}
+.formBott1{
+    width: 500px;       
+    height: 30px;
+    border:none;
+}
+
+.formBott{
+    padding: 10px;
+}
+.reset1{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;     
+    height: 30px;
+    border:none;
+    background-color: #1259c3;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.reset{
+    padding: 10px;
+}
+.perfiluser{
+    display: inline-flex;
 }
