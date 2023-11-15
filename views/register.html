@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c81a37063f.js" crossorigin="anonymous"></script>
+    <title>Mercado Liebre</title>
+</head>
+<body>
+<header class="header">
+    <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" width="240"
+        height="100">
+    <div class="search-bar">    
+</div>
+<p class="compracuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito!</p>
+</header>
+  <main class="register">
+    <div class="main-welcom">
+      <p>Registrese para ingresar a mercado liebre</p>
+    </div>
+    <div class="main-form">
+      <form action="/register" method="POST">
+        <nav>
+          <label class="nombre">Nombre y Apellido</label>
+        </nav>
+        <input class="main-name" type="text" name="name" required>
+        <nav>
+          <label class="user">Nombre de usuario</label>
+        </nav>
+        <input class="main-user" type="text" name="user" required>
+        <nav>
+          <label class="main-em">E-mail:</label>
+        </nav>
+        <input class="main-name" type="email" name="name" required>
+        <nav>
+          <label class="Fecha">Fecha de nacimiento</label>
+        </nav>
+        <input class="main-date" type="date" name="date" required>
+        <nav>
+          <label class="direction">Domicilio</label>
+        </nav>
+        <input class="main-em1" type="email" name="email" required>
+        <nav>
+          <label class="main-pass">Perfil de usuario</label>
+        </nav>
+        <nav>
+          <option for="opcion1">Comprar</option>
+          <input type="checkbox" id="opcion1" name="opciones[]" value="opcion1">
+          <option for="opcion2">Vender</option>
+          <input type="checkbox" id="opcion2" name="opciones[]" value="opcion2">
+        </nav>
+
+        <nav>
+          <label class="main-pass">Perfil de usuario</label>
+        </nav>
+        <nav>
+          <option for="opcion1">Electro</option>
+          <input type="checkbox" id="opcion1" name="opciones[]" value="opcion1">
+          <option for="opcion2">Moda</option>
+          <input type="checkbox" id="opcion2" name="opciones[]" value="opcion2">
+          <option for="opcion3">Jugueteria</option>
+          <input type="checkbox" id="opcion3" name="opciones[]" value="opcion3">
+          <option for="opcion4">Vida Sana</option>
+          <input type="checkbox" id="opcion4" name="opciones[]" value="opcion4">
+        </nav>
+
+        <label for="foto">Subir foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+        <nav>
+          <label class="main-pass">Contraseña:</label>
+        </nav>
+        <input class="main-pass1" type="password" name="password" required>
+        </nav>
+        <nav>
+          <label class="main-pass">Confirmar Contraseña:</label>
+        </nav>
+        <nav>
+          <input class="main-pass1" type="password" name="password" required>
+        </nav>
+        <input type="reset" value="Borrar Todo">
+      </form>
+      <form action="/home">
+        <nav>
+          <p>
+            <button class="main-" type="submit">Registrarse</button>
+          </p>
+        </nav>
+      </form>
+    </div>
+  </main>
+</body>

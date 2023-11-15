@@ -177,3 +177,15 @@ footer {
     color:#1259c3;
 }
 
+.register{
+    display: flex;
+    justify-content: center;
+    padding-left: 2px;
+}
+.login{
+    display:flex;
+    justify-content: center;
+    padding-left: 2px;
+    align-items: center;
+    box-sizing: border-box;
+}
