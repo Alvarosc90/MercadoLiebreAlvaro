@@ -1,3 +1,29 @@
+/* Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+/*
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -91,8 +117,7 @@ body {
 }
 
 body {
-    background-color: #EAC926;
-    font-family: 'Roboto', sans-serif;
+    background-color: #ffe600;
 }
 
 .containertop {
@@ -126,21 +151,6 @@ h2 {
     font-size: 24px;
 }
 
-.titulo {
-    font-size: 24px;
-}
-
-.precio {
-    font-size: 18px;
-}
-
-.descuento {
-    font-size: 16px;
-}
-
-.desc {
-    font-size: 16px;
-}
 
 .barraBusqueda {
     padding: 40px;
@@ -178,19 +188,26 @@ h2 {
     height: 80%;
 }
 .conteinerArt{
-    background-color: white;
     box-sizing: border-box;
+    height: max-content;
+    width: auto;
+    max-width:100% ;
+    max-height: 100%;
 }
 .articulos {
     width: 25%;
     box-sizing: border-box;
     float: left;
     padding: 8px;
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .info {
     display: flex;
-    align-items: end;
+    flex-direction: column;
 }
 
 .caja-arti .product-delivery-icon {
@@ -207,33 +224,45 @@ h2 {
     top: -15px;
     color: #39b54a;
 }
-.precio-txt {
+.precio-desc {
     font-size: 18px;
     margin-left: 10px;
     margin-right: 10px;
-    flex-direction: column;
     display: flex;
 }
-.descuento-txt{
-display: flex;
-flex-direction: column;
+.descuento-desc{
+    color: #39b54a;
+    font-size: 16px;
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.desc-txt {
+.desc-art {
     font-size: 16px;
     display: none;
 }
 .caja-arti {
     border-top: 1px solid #ebebeb;
-    margin: 15px;
+    margin: 20px;
+    padding-top: 10px;
     position: relative;
+    height: auto;
+    width: auto;
 
 }
 
+.img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: auto;
+}
 
-.articulos:hover .desc-txt {
+.articulos:hover .desc-art {
     display: block;
 }
-/* Girar el ícono del camión en hover */
+
+
 .articulos:hover .product-delivery-icon {
     transform: rotate(45deg);
     transition: transform 0.3s ease;
@@ -289,6 +318,14 @@ flex-direction: column;
 
 .articulos2{
     padding-top: 50px;
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+    padding: 8px;
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 
@@ -433,7 +470,7 @@ flex-direction: column;
 }
 
 .perfiluser {
-    display: inline;
+    display: inline-flex;
 }
 
 /* footer */
@@ -451,7 +488,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
+    background-color: white;
     padding: 20px;
     text-align: center;
 }
@@ -488,5 +525,77 @@ footer i {
     .articulos {
         width: 100%;
         /* Mostrar 1 producto en una línea */
+    }
+}
+
+@media (min-width: 769px) {
+    .articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    main .articulo {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .desc-art {
+        display: none;
+    }
+
+    #navBar {
+        display: none;
+    }
+
+    #loginBar {
+        display: none;
+    }
+
+    #searchBar {
+        width: 60%;
+        margin-left: 0%;
+        display:inline
+
+    }
+
+    #logo {
+        width: 100%;
+        margin-right: 0%;
+        padding: 10px;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ico-posi {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    main .articulo {
+        width: 100%;
+    }
+
+    .header {
+        display: row;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .ico-posi {
+        display: inline;
+        width: 100%;
     }
 }
