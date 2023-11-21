@@ -473,13 +473,22 @@ h2 {
     display: inline-flex;
 }
 
+.burger-menu {
+    color: white;
+    padding: 1%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
 /* footer */
 header li {
     padding: 10px;
 }
 
 footer i:hover {
-    color: var(--amarillo);
+    color: red;
 }
 
 footer {
@@ -507,16 +516,24 @@ footer section {
 
 
 }
+.copyright{
+    font-weight: bold;
+    padding-top: 15px;
+}
 
 footer i {
+
     color: blue;
     margin-bottom: 10px;
+}
+footer h3 {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
     .articulos {
         width: 50%;
-        /* Mostrar 2 productos en una línea */
     }
 }
 
@@ -524,7 +541,6 @@ footer i {
 @media only screen and (max-width: 480px) {
     .articulos {
         width: 100%;
-        /* Mostrar 1 producto en una línea */
     }
 }
 
@@ -554,8 +570,13 @@ footer i {
 
     #navBar {
         display: none;
+        
     }
-
+.articulo{
+    max-width: 100%;
+        max-height: 100%;
+        align-items: center;
+}
     #loginBar {
         display: none;
     }
@@ -563,8 +584,8 @@ footer i {
     #searchBar {
         width: 60%;
         margin-left: 0%;
-        display:inline
-
+        display:inline;
+        
     }
 
     #logo {
@@ -584,6 +605,7 @@ footer i {
 
     main .articulo {
         width: 100%;
+        
     }
 
     .header {
