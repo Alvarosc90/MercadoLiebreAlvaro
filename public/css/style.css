@@ -53,9 +53,14 @@ body {
     border-radius: 5px;
     overflow: hidden;
     height: 100%;
+    border: none;
 }
 
+.barra{
+    border-radius: none;
+}
 .search-bar input {
+    border-radius: none;
     padding: 10px;
     flex: 1;
     border: none;
